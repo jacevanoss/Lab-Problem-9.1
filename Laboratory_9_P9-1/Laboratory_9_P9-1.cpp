@@ -12,6 +12,7 @@
 using namespace std;
 
 void printarray(int array[], int size);
+void evenIndex(int array[], int size); 
 
 
 int main() {
@@ -23,6 +24,7 @@ int main() {
 		randomIntegers[i] = rand() % 9000 + 1000;
 	}
 	printarray(randomIntegers, arraySize);
+	evenIndex(randomIntegers, arraySize);
 	
 	
 
@@ -32,6 +34,13 @@ int main() {
 void printarray(int array[], int size) {
 	cout << "The random integers: ";
 	for (int i = 0; i < size; i++) {
+		cout << array[i] << " ";
+	}
+	cout << endl;
+}
+void evenIndex(int array[], int size) {
+	cout << "Even indices: ";
+	for (int i = 0; i < size; i+=2) {
 		cout << array[i] << " ";
 	}
 	cout << endl;
