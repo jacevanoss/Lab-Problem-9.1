@@ -37,13 +37,13 @@ int main() {
 void printarray(int array[], int size) {
 	cout << "The random integers: ";
 	for (int i = 0; i < size; i++) {
-		cout << array[i] << " ";
+		cout << array[i] << " "; // prints each element
 	}
 	cout << endl;
 }
 void evenIndex(int array[], int size) {
 	cout << "Even indices:        ";
-	for (int i = 0; i < size; i+=2) {
+	for (int i = 0; i < size; i+=2) { // prints even indicies
 		cout << array[i] << " ";
 	}
 	cout << endl;
@@ -59,8 +59,8 @@ void evenValues(int array[], int size) {
 }
 void reversedOrder(int array[], int size) {
 	cout << "Reversed order:      ";
-	for (int i = size - 1; i >= 0; i--) {
-		cout << array[i] << " ";
+	for (int i = size - 1; i >= 0; i--) { // starts from last index
+		cout << array[i] << " "; 
 	}
 	cout << endl;
 }
