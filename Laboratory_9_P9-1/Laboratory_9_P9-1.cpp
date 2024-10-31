@@ -14,6 +14,7 @@ using namespace std;
 void printarray(int array[], int size);
 void evenIndex(int array[], int size); 
 void evenValues(int array[], int size);
+void reversedOrder(int array[], int size);
 
 int main() {
 	srand(time(0));
@@ -26,7 +27,7 @@ int main() {
 	printarray(randomIntegers, arraySize);
 	evenIndex(randomIntegers, arraySize);
 	evenValues(randomIntegers, arraySize);
-	
+	reversedOrder(randomIntegers, arraySize);
 	
 
 	return 0;
@@ -52,6 +53,13 @@ void evenValues(int array[], int size) {
 		if (array[i] % 2 == 0) {
 			cout << array[i] << " ";
 		}
+	}
+	cout << endl;
+}
+void reversedOrder(int array[], int size) {
+	cout << "Reversed order:      ";
+	for (int i = size - 1; i >= 0; i--) {
+		cout << array[i] << " ";
 	}
 	cout << endl;
 }
