@@ -13,7 +13,7 @@ using namespace std;
 
 void printarray(int array[], int size);
 void evenIndex(int array[], int size); 
-
+void evenValues(int array[], int size);
 
 int main() {
 	srand(time(0));
@@ -25,6 +25,7 @@ int main() {
 	}
 	printarray(randomIntegers, arraySize);
 	evenIndex(randomIntegers, arraySize);
+	evenValues(randomIntegers, arraySize);
 	
 	
 
@@ -39,9 +40,18 @@ void printarray(int array[], int size) {
 	cout << endl;
 }
 void evenIndex(int array[], int size) {
-	cout << "Even indices: ";
+	cout << "Even indices:        ";
 	for (int i = 0; i < size; i+=2) {
 		cout << array[i] << " ";
+	}
+	cout << endl;
+}
+void evenValues(int array[], int size) {
+	cout << "Evan values:         ";
+	for (int i = 0; i < size; i++) {
+		if (array[i] % 2 == 0) {
+			cout << array[i] << " ";
+		}
 	}
 	cout << endl;
 }
