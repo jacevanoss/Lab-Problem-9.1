@@ -15,6 +15,7 @@ void printarray(int array[], int size);
 void evenIndex(int array[], int size); 
 void evenValues(int array[], int size);
 void reversedOrder(int array[], int size);
+void firstAndLast(int array[], int size);
 
 int main() {
 	srand(time(0));
@@ -28,8 +29,8 @@ int main() {
 	evenIndex(randomIntegers, arraySize);
 	evenValues(randomIntegers, arraySize);
 	reversedOrder(randomIntegers, arraySize);
+	firstAndLast(randomIntegers, arraySize);
 	
-
 	return 0;
 }
 
@@ -62,4 +63,7 @@ void reversedOrder(int array[], int size) {
 		cout << array[i] << " ";
 	}
 	cout << endl;
+}
+void firstAndLast(int array[], int size) {
+	cout << "First and last:      " << array[0] << " " << array[size - 1] << endl;
 }
